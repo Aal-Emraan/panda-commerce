@@ -8,6 +8,9 @@
     <link rel="shortcut icon" href="images/logo1.png" type="image/x-icon">
     <!-- Bootstrap Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b6571ae4a5.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -28,7 +31,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="searchBox position-relative w-50">
                             <input class="me-auto border-0 rounded-pill bg-light p-2 fst-italic w-100" type="search" placeholder="Serach..." area-label="Search">
-                            <i class="fas fa-search" style="position: absolute; top: .75em; right: 1em; color: gray;"></i>
+                            <button type="button"><i class="fas fa-search" style="position: absolute; top: .75em; right: 1em; color: gray;"></i></button>
                         </div>
                         <ul class="navbar-nav ms-auto mt-2 mb-lg-0">
                             <li class="nav-item">
@@ -60,7 +63,67 @@
 
             <!-- head items start -->
 
-            <div class="headItems">
+            <div id="hello" class="carousel slide carousel-dark" data-bs-touch="true" data-bs-ride="carousel" style="background: #FEEAE9; border-radius: 1rem;">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-8 p-5">
+                                <h1>Cool Dude Headphone</h1>
+                                <p>This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
+                                <h2 class="mt-4" style="color: #FF136F;">$420</h2>
+                                <button class="btn btn-primary">Buy Now</button>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <img class="w-100 py-4" src="images/banner-images/headphone.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-8 p-5">
+                                <h1>Mega LCD TV For Sports</h1>
+                                <p>This is the best tv in the world for people who just want to waste time in front of tv.</p>
+                                <h2 class="mt-4" style="color: #FF136F;">$1200</h2>
+                                <button class="btn btn-primary">Buy Now</button>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <img class="w-100 py-4" src="images/banner-images/tv.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-8 p-5">
+                                <h1>Xbox For Your Living Room</h1>
+                                <p>This is the best x-box in the world for people who just want to waste time in front of fake sports.</p>
+                                <h2 class="mt-4" style="color: #FF136F;">$420</h2>
+                                <button class="btn btn-primary">Buy Now</button>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <img class="w-100 py-4" src="images/banner-images/xbox.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" data-bs-target="#hello" type="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" data-bs-target="#hello" type="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#hello" data-bs-slide-to="0" area-current="true" area-label="Slide 1" class="active"></button>
+                        <button type="button" data-bs-target="#hello" data-bs-slide-to="1" area-current="true" area-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#hello" data-bs-slide-to="2" area-current="true" area-label="Slide 1"></button>
+                    </div>
+
+                </div>
 
             </div>
 
@@ -75,6 +138,33 @@
     <main>
 
         <section>
+
+            <div class="container my-5">
+                <h2>Catagories</h2>
+
+                <div class="row g-4 text-white mt-4">
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-between align-items-center bg-warning rounded px-4 py-3">
+                            <h2>Watches</h2>
+                            <img src="images/categories/watch.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-between align-items-center bg-success rounded px-4 py-3">
+                            <h2>Shoes</h2>
+                            <img src="images/categories/shoes.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-between align-items-center bg-info rounded px-4 py-3">
+                            <h2>Bags</h2>
+                            <img src="images/categories/bag.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
 
         </section>
 
