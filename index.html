@@ -30,8 +30,8 @@
                       </button>                   
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="searchBox position-relative w-50">
-                            <input class="me-auto border-0 rounded-pill bg-light p-2 fst-italic w-100" type="search" placeholder="Serach..." area-label="Search">
-                            <button type="button"><i class="fas fa-search" style="position: absolute; top: .75em; right: 1em; color: gray;"></i></button>
+                            <input class="form-control me-auto border-0 bg-light p-2 fst-italic w-100 rounded-pill" type="search" placeholder="Serach..." area-label="Search">
+                            <button type="button" class="border-0 position-absolute top-0 end-0 p-2 bg-light me-2 rounded-circle"><i class="fas fa-search text-muted"></i></button>
                         </div>
                         <ul class="navbar-nav ms-auto mt-2 mb-lg-0">
                             <li class="nav-item">
@@ -40,18 +40,18 @@
                             <li class="nav-item dropdown">
                                 <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Products</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="" class="dropdown-item">Shoes</a></li>
-                                    <li><a href="" class="dropdown-item">Bags</a></li>
+                                    <li><a href="#Shoes" class="dropdown-item">Shoes</a></li>
+                                    <li><a href="#Bags" class="dropdown-item">Bags</a></li>
                                     <li><a href="" class="dropdown-item">Umbrellas</a></li>
                                     <li><hr></li>
-                                    <li><a href="" class="dropdown-item">Watches</a></li>
+                                    <li><a href="#Watches" class="dropdown-item">Watches</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">About Us</a>
+                                <a href="#Catagories" class="nav-link">Catagories</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Contact Us</a>
+                                <a href="#Contact" class="nav-link">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -141,10 +141,10 @@
 
         <section>
 
-            <div class="container my-5">
+            <div class="container my-5" id="Catagories">
                 <h2>Catagories</h2>
 
-                <div class="row g-4 text-white mt-4">
+                <div class="row g-4 text-white mt-4" id="Watches">
                     <div class="col-lg-4">
                         <div class="d-flex justify-content-between align-items-center bg-warning rounded px-4 py-3">
                             <h2>Watches</h2>
@@ -177,7 +177,7 @@
 
         <section class="bg-light">
 
-            <div class="container py-4">
+            <div class="container py-4" id="Shoes">
                 <h2 class="pb-3">Shoes</h2>
 
                 <div class="row g-4 text-center">
@@ -238,7 +238,11 @@
                 </div>
             </div>
 
-            <div class="container py-4">
+            <!-- Shoes end -->
+
+            <!-- Bags start -->
+
+            <div class="container py-4" id="Bags">
                 <h2 class="pb-3">Backpack</h2>
 
                 <div class="row g-4 text-center">
@@ -300,22 +304,22 @@
             </div>
         </section>
         
-        <!-- Shoes end -->
+        <!-- Bags end -->
 
 
     </main>
 
-    <footer>
+    <footer id="Contact">
 
         <div class="container text-center" style="background: #FFF2F1; margin: 4.5rem auto; border-radius: 1rem;">
             <div style="padding: 10em 0;">
                 <h2>LET'S STAY IN TOUCH</h2>
                 <p class="text-muted">Get updates on sales specials and more</p>
 
-                <form action="" class="position-relative w-50 mx-auto overflow-hidden rounded-pill">
+                <form action="" class="position-relative w-50 mx-auto">
 
-                    <input class="p-2 border-0 w-100 p-3" type="email" placeholder="Enter your email:">
-                    <a href="" class="btn btn-info p-3 position-absolute top-0 end-0 text-white">Send</a>
+                    <input class="form-control p-2 border-0 w-100 p-3 fst-italic rounded-pill" type="email" placeholder="Enter your email:">
+                    <a href="" class="btn btn-info p-3 position-absolute top-0 end-0 text-white border-0 rounded-pill">Send</a>
                 </form>
             </div>
         </div>
