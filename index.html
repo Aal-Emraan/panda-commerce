@@ -142,7 +142,7 @@
         <section>
 
             <div class="container my-5" id="Catagories">
-                <h2>Catagories</h2>
+                <h2 class="h2Tag">Catagories</h2>
 
                 <div class="row g-4 text-white mt-4" id="Watches">
                     <div class="col-lg-4">
@@ -178,7 +178,7 @@
         <section class="bg-light">
 
             <div class="container py-4" id="Shoes">
-                <h2 class="pb-3">Shoes</h2>
+                <h2 class="pb-3 h2Tag" >Shoes</h2>
 
                 <div class="row g-4 text-center">
 
@@ -243,7 +243,7 @@
             <!-- Bags start -->
 
             <div class="container py-4" id="Bags">
-                <h2 class="pb-3">Backpack</h2>
+                <h2 class="pb-3 h2Tag" >Backpack</h2>
 
                 <div class="row g-4 text-center">
 
@@ -326,5 +326,12 @@
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+
+        const color = document.getElementsByClassName('h2Tag');
+        for(h2 of color){
+            h2.style.color = 'red'
+        }
+    </script>
 </body>
 </html>
